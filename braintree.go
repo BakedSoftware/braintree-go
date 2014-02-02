@@ -75,7 +75,7 @@ func (g *Braintree) execute(method, path string, xmlObj interface{}) (*Response,
 	req.Header.Set("Content-Type", "application/xml")
 	req.Header.Set("Accept", "application/xml")
 	req.Header.Set("Accept-Encoding", "gzip")
-	req.Header.Set("User-Agent", "Braintree Go 0.3.1")
+	req.Header.Set("User-Agent", "Braintree Go 0.3.2")
 	req.Header.Set("X-ApiVersion", "3")
 	req.SetBasicAuth(g.PublicKey, g.PrivateKey)
 
